@@ -16,7 +16,7 @@ export function Header() {
   }
 
   return (
-    <header className={}>
+    <header>
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <span className="font-serif text-2xl font-bold tracking-tighter">Athenaeum</span>
@@ -83,4 +83,3 @@ export function Header() {
     </header>
   )
 }
-
