@@ -63,4 +63,30 @@ export function Testimonials() {
                     className={}
                   >
                     <blockquote className="text-xl md:text-2xl font-serif text-slate-800 italic">
-                      
+                      {testimonial.quote}
+                    </blockquote>
+                    <div className="mt-6">
+                      <p className="font-medium text-slate-900">{testimonial.author}</p>
+                      <p className="text-sm text-slate-600">{testimonial.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+
+          <div className="flex justify-center mt-8 space-x-2">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveIndex(index)}
+                className={}
+                aria-label={}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
