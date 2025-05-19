@@ -60,7 +60,7 @@ export function Testimonials() {
                 {testimonials.map((testimonial, index) => (
                   <div 
                     key={testimonial.id}
-                    className={}
+                    className={`transition-opacity duration-500 ${index === activeIndex ? 'opacity-100' : 'opacity-0 hidden'}`}
                   >
                     <blockquote className="text-xl md:text-2xl font-serif text-slate-800 italic">
                       {testimonial.quote}
@@ -80,8 +80,8 @@ export function Testimonials() {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={}
-                aria-label={}
+                className={`w-3 h-3 rounded-full transition-colors ${index === activeIndex ? 'bg-primary' : 'bg-slate-300'}`}
+                aria-label={`View testimonial ${index + 1}`}
               />
             ))}
           </div>
