@@ -16,7 +16,7 @@ export function Book({ title, author, coverImage, description, available = true 
       <div className="relative aspect-[2/3] overflow-hidden">
         <Image 
           src={coverImage} 
-          alt={} 
+          alt=""
           fill 
           className="object-cover transition-transform duration-500 group-hover:scale-105" 
         />
