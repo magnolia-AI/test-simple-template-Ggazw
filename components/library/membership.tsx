@@ -84,7 +84,7 @@ export function Membership() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <Card className={}>
+              <Card className="">
                 {tier.popular && (
                   <div className="absolute -top-3 left-0 right-0 flex justify-center">
                     <span className="bg-primary text-primary-foreground text-xs font-medium py-1 px-3 rounded-full">
