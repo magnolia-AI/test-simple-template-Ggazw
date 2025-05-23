@@ -24,7 +24,7 @@ export function Hero() {
           className="space-y-8"
         >
           <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter">
-            Welcome to <span className="text-primary">Athenaeum</span>
+            Welcome to <span className="text-primary">Athenarum</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
@@ -44,7 +44,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
+            className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20"
           >
             <div className="flex flex-col items-center gap-2">
               <span className="text-sm font-medium">Scroll to discover</span>
@@ -67,3 +67,5 @@ export function Hero() {
     </section>
   )
 }
+
+

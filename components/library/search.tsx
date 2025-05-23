@@ -5,7 +5,7 @@ import { SearchIcon } from "lucide-react";
 
 export function Search() {
   return (
-    <section className="py-12 bg-accent/20">
+    <section className="pt-16 pb-12 bg-accent/20">
       <div className="container px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
@@ -60,3 +60,4 @@ export function Search() {
     </section>
   );
 }
+
