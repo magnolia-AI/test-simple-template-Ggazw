@@ -19,7 +19,7 @@ export function Header() {
     <header className="py-4 sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b transition-all duration-200">
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-serif text-2xl font-bold tracking-tighter">Athenaeum</span>
+          <span className="font-serif text-2xl font-bold tracking-tighter">Athenarum</span>
         </Link>
 
         {/* Desktop Navigation */}
