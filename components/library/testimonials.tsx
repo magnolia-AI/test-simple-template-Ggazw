@@ -14,13 +14,13 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    quote: "The Athenaeum has been my intellectual sanctuary for over a decade. The rare manuscript collection is unparalleled.",
+    quote: "The Athenarum has been my intellectual sanctuary for over a decade. The rare manuscript collection is unparalleled.",
     author: "Professor Eleanor Harwick",
     title: "Oxford University"
   },
   {
     id: 2,
-    quote: "As a writer, having access to The Athenaeum's first editions and quiet reading rooms has been invaluable to my creative process.",
+    quote: "As a writer, having access to The Athenarum's first editions and quiet reading rooms has been invaluable to my creative process.",
     author: "Jonathan Mercer",
     title: "Award-winning Novelist"
   },
@@ -48,7 +48,7 @@ export function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-medium tracking-tight">Member Testimonials</h2>
           <p className="mt-4 text-slate-600 max-w-2xl mx-auto">
-            Discover what our distinguished members have to say about their experience at The Athenaeum.
+            Discover what our distinguished members have to say about their experience at The Athenarum.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export function Testimonials() {
                 {testimonials.map((testimonial, index) => (
                   <div 
                     key={testimonial.id}
-                    className={`transition-opacity duration-500 ${index === activeIndex ? 'opacity-100' : 'opacity-0 hidden'}`}
+                    className={}
                   >
                     <blockquote className="text-xl md:text-2xl font-serif text-slate-800 italic">
                       {testimonial.quote}
@@ -80,8 +80,8 @@ export function Testimonials() {
               <button
                 key={index}
                 onClick={() => setActiveIndex(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${index === activeIndex ? 'bg-primary' : 'bg-slate-300'}`}
-                aria-label={`View testimonial ${index + 1}`}
+                className={}
+                aria-label={}
               />
             ))}
           </div>
@@ -90,3 +90,6 @@ export function Testimonials() {
     </section>
   );
 }
+
+
+
