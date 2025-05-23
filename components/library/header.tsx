@@ -1,25 +1,25 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu } from 'lucide-react'
+import { useState } from 'react';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Menu } from 'lucide-react';
 
 export function Header() {
-  const [isScrolled, setIsScrolled] = useState(false)
-  
+  const [isScrolled, setIsScrolled] = useState(false);
+
   if (typeof window !== 'undefined') {
     window.addEventListener('scroll', () => {
-      setIsScrolled(window.scrollY > 10)
-    })
+      setIsScrolled(window.scrollY > 10);
+    });
   }
 
   return (
     <header className="py-4 sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b transition-all duration-200">
       <div className="container flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-serif text-2xl font-bold tracking-tighter">Athenaeum</span>
+          <span className="font-serif text-2xl font-bold tracking-tighter">Athenarum</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -80,7 +80,6 @@ export function Header() {
           </SheetContent>
         </Sheet>
       </div>
-    </header>
-  )
-}
+    </header>);
 
+}
