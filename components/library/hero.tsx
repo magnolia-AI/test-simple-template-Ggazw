@@ -44,7 +44,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 1 }}
-            className="absolute bottom-20 left-1/2 transform -translate-x-1/2 z-20"
+            className="pt-16"
           >
             <div className="flex flex-col items-center gap-2">
               <span className="text-sm font-medium">Scroll to discover</span>
@@ -67,5 +67,3 @@ export function Hero() {
     </section>
   )
 }
-
-
