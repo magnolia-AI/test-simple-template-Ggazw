@@ -24,7 +24,7 @@ export function Hero() {
           className="space-y-8"
         >
           <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tighter">
-            Welcome to <span className="text-primary">Athenaeum</span>
+            Welcome to <span className="text-primary">Athenarum</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
